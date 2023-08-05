@@ -1,3 +1,63 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ccf;
+}
+header .logo {
+  height: 80%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header menu {
+  margin: 0;
+  padding: 0;
+  height: 80%;
+  width: 40%;
+  background-color: rgb(0, 255, 34);
+}
+header menu nav {
+  background-color: rgb(0, 0, 82);
+  height: 100%;
+  width: 100%;
+}
+header menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  background-color: #fff;
+  margin: 0;
+}
+header .auth {
+  height: 80%;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .signin {
+  background-color: gray;
+  border: none;
+}
+header .signup {
+  background-color: rgba(130, 93, 165, 0.763);
+  border: none;
+}
 
 /*# sourceMappingURL=style.css.map */
