@@ -6,25 +6,60 @@ body{
     padding: 0;
 }
 header{
+    position: fixed;
+    z-index: 10;
     height: 100px;
     width: 100%;
+    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #ccf;
     .logo{
-    height: 100%;
-    width: 100%;
-    
+    height: 75%;
+    width: 75%;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    animation: animation1 4s;
+    }
+    @keyframes animation2 {
+        0%{
+            transform: translateX(0);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes animation1 {
+        0%{
+            transform: translateX(200px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .h3{
+        font-size: 28px;
+        animation: animation1 1s;
+        
+    }
+    .fiat{
+        height: 40%;
+        width: 40%;
+        animation: animation2 3s;
     }
     menu{
     margin: 0;
     padding: 0;
     height: 80%;
-    width: 40%;
+    width: 45%;
     background-color: rgb(0, 255, 34);
     nav{
         background-color: rgb(0, 0, 82);
@@ -33,7 +68,7 @@ header{
     }
     ul{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         height: 100%;
         width: 100%;
@@ -41,21 +76,262 @@ header{
         background-color: #fff;
         margin: 0;
     }
+    ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 19px;
+    }
+    :hover {
+        color: red;
+    }
+
+    ul select{
+        border: none;
+        padding-left: 20px;
+    }
+
+
+
     }
     .auth{
     height: 80%;
-    width: 20%;
+    width: 8%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    animation: animation2 3s;
     }
-    .signin{
-        background-color: gray;
+    .login{
+        background-color: white;
         border: none;
+        height: 40%;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
     }
     .signup{
-        background-color: rgba(130, 93, 165, 0.763);
+        background-color: red;
         border: none;
+        border-radius: 8px;
+        height: 40%;
+        a{
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+        }
     }
 
+}
+
+.milieu{
+    position: relative;
+    top: 98px;
+    background-image: url(../images/11207.jpg);
+    height: 88vh;
+h1{
+    margin-top: 0px;
+    padding-top: 290px;
+    padding-left: 290px;
+    font-size: 65px;
+}
+h3{
+    padding-left: 315px;
+    font-size: 35px;
+}
+p{
+    padding-left: 435px;
+    font-size: 18px;
+}
+}
+
+
+
+
+
+
+
+
+// auth css
+
+
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    position: relative;
+    top: 100px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../images/11207.jpg);
+}
+.box{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.form-box{
+    width: 500px;
+    margin: 0px 10px;
+}
+.form-box heade{
+    font-size: 25px;
+    font-weight: 600;
+
+    justify-content: start;
+}
+.form-box heade:before{
+    position: absolute;
+    margin-top: 30px;
+    content: '';
+    width: 48px;
+    height: 3px;
+    border-radius: 70px;
+    background: rgba(223, 40, 40, 0.808) ;
+
+}
+.form-box form .field{
+    
+    margin-bottom: 10px;
+    flex-direction: colmn;
+}
+.form-box form .input input{
+    height: 40px;
+    width: 95%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.btn{
+    width: 100%;
+    position: relative;
+    height: 35px;
+    /* background: rgba(76,68,182,0.808); */
+    background: rgba(255, 0, 0, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition : all .3s;
+    margin-top : 10px;
+    padding: 0px 10px;
+    
+}
+.btn:hover{
+    opacity: 0.82;
+    box-shadow: 0.8px 0.8px 5px 5px rgba(214, 212, 231, 0.808);
+}
+.submit{
+    width: 95%;
+}
+.links{
+    margin-bottom: 15px;
+}
+
+
+
+
+//trans
+
+.trans{
+    position: relative;
+    top: 150px;
+    h2{
+        font-size: 48px;
+        padding-left: 190px;
+    }
+    h3{
+        font-size: 35px;
+        padding-left: 450px;
+        
+    }
+    h4{
+        font-size: 25px;
+        padding-left: 550px;
+    }
+    p{
+        font-size: 20px;
+        padding-left: 620px;
+    }
+}
+
+
+
+
+
+
+
+
+// partie js
+
+
+
+.carder{
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+   
+}
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 300px;
+  gap: 50px;
+}
+.card-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+    filter: grayscale(0%);
+    transition: .5s;
+}
+.card-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card-item .eye{
+    position: absolute;
+    bottom: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+
+.expand {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.712),
+    0 0 50px rgba(255, 0, 0, 0.712);
+    filter: grayscale(0);
+    
 }
